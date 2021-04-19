@@ -2,7 +2,7 @@ const request = require('request-promise');
 const cheerio = require('cheerio');
 const Telegraf = require('telegraf');
 const { Console } = require('console');
-const bot = new Telegraf('1423601755:AAG_9Off45eNKgzBxVwDTamQeIlXuCj8iEU')
+const bot = new Telegraf(process.env.KEY_TOKEN)
 
 bot.command('estado', (ctx) =>{
     let initreturn = init();
